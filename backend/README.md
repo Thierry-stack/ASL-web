@@ -1,0 +1,1 @@
+The API now lives in **Next.js Route Handlers** under `frontend/src/app/api/`. Keep this folder only if you still use it for reference or run `prisma` against `backend/prisma` — the canonical Prisma schema is **`frontend/prisma/schema.prisma`**.

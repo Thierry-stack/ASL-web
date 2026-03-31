@@ -2,12 +2,12 @@
   "name": "sign-language-lms",
   "private": true,
   "scripts": {
+    "dev": "npm run dev --prefix frontend",
     "dev:frontend": "npm run dev --prefix frontend",
-    "dev:backend": "npm run dev --prefix backend",
-    "db:generate": "npm run db:generate --prefix backend",
-    "db:push": "npm run db:push --prefix backend",
-    "db:migrate": "npm run db:migrate --prefix backend",
-    "db:studio": "npm run db:studio --prefix backend",
-    "db:check": "npm run db:check --prefix backend"
+    "build": "npm run build --prefix frontend",
+    "start": "npm run start --prefix frontend",
+    "db:generate": "npm run db:generate --prefix frontend",
+    "db:push": "npm run db:push --prefix frontend",
+    "db:studio": "npm run db:studio --prefix frontend"
   }
 }

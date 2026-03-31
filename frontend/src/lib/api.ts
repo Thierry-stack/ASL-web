@@ -1,6 +1,15 @@
 import type { CourseDetail, CourseSummary, EnrollmentRow, UserPublic } from "./types";
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:4000";
+/** Same-origin on Vercel: leave unset or "". For local API on port 4000, set NEXT_PUBLIC_API_URL=http://localhost:4000 */
+function getApiBase(): string {
+  const env = process.env.NEXT_PUBLIC_API_URL;
+  if (env !== undefined && env !== "") {
+    return env.replace(/\/$/, "");
+  }
+  return "";
+}
+
+const API_BASE = getApiBase();
 
 export class ApiError extends Error {
   constructor(
