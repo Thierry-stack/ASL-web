@@ -2,6 +2,10 @@
   "name": "sign-language-lms",
   "private": true,
   "workspaces": ["frontend"],
+  "optionalDependencies": {
+    "@tailwindcss/oxide-linux-x64-gnu": "4.2.2",
+    "lightningcss-linux-x64-gnu": "1.32.0"
+  },
   "scripts": {
     "dev": "npm run dev --prefix frontend",
     "dev:frontend": "npm run dev --prefix frontend",
