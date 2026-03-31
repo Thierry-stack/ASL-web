@@ -36,8 +36,9 @@ Root scripts: `npm run dev`, `npm run build`, `npm run db:push` (all run inside 
 ## Vercel
 
 1. Import the repo; set **Root Directory** to **`frontend`**.
-2. Add the same env vars as `.env.local` (Supabase URLs, `JWT_SECRET`, Flutterwave, `NEXT_PUBLIC_APP_URL` = your Vercel URL, `PUBLIC_APP_URL` = same).
-3. Webhook URL for Flutterwave: `https://<your-domain>/api/webhooks/flutterwave`.
+2. Commit **`frontend/package-lock.json`** so installs match local Prisma **6.x** (Prisma 7 removed `directUrl` from `schema.prisma` until you migrate to `prisma.config.ts`).
+3. Add the same env vars as `.env.local` (Supabase URLs, `JWT_SECRET`, Flutterwave, `NEXT_PUBLIC_APP_URL` = your Vercel URL, `PUBLIC_APP_URL` = same).
+4. Webhook URL for Flutterwave: `https://<your-domain>/api/webhooks/flutterwave`.
 
 ---
 
