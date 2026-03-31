@@ -25,12 +25,17 @@
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "tailwind-merge": "^3.5.0",
-    "zod": "^3.24.2"
+    "zod": "^3.24.2",
+    "@tailwindcss/postcss": "^4",
+    "lightningcss": "1.32.0",
+    "tailwindcss": "^4"
+  },
+  "optionalDependencies": {
+    "lightningcss-linux-x64-gnu": "1.32.0"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
     "@types/jsonwebtoken": "^9.0.9",
-    "@tailwindcss/postcss": "^4",
     "@types/pg": "^8.11.10",
     "prisma": "^7.6.0",
     "@types/node": "^20",
@@ -38,7 +43,6 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.1",
-    "tailwindcss": "^4",
     "typescript": "^5"
   }
 }
